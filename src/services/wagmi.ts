@@ -56,7 +56,7 @@ const { chains, publicClient } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: "Micro Grants",
-  projectId: (process.env.PROJECT_ID as string) || "YOUR_PROJECT_ID",
+  projectId: (process.env.PROJECT_ID as string) || "950dbdf6f1d331fbc81e384788249b0b",
   chains,
 });
 
