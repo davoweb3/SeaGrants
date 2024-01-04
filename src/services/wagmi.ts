@@ -14,6 +14,7 @@ import {
   optimism,
   polygon,
   polygonMumbai,
+  arbitrumSepolia,
 } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
@@ -29,9 +30,10 @@ const stagingChains = [
   sepolia,
   polygonMumbai,
   arbitrumGoerli,
+  arbitrumSepolia,
 ];
 
-const productionChains = [arbitrum, base, celo, mainnet, polygon, optimism];
+const productionChains = [goerli];
 
 const availableChains =
   process.env.NEXT_PUBLIC_ENVIRONMENT === "dev"
