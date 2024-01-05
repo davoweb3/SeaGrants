@@ -801,7 +801,7 @@ export default function PoolForm() {
                   id="useRegistryAnchor"
                   name="useRegistryAnchor"
                   className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  defaultValue="false"
+                  defaultValue="true"
                 >
                   <option>true</option>
                   <option>false</option>
@@ -842,15 +842,16 @@ export default function PoolForm() {
                         id="profileId"
                         name="profileId"
                         className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                        defaultValue={profiles[0].profileId}
+                        defaultValue="0x3bdb3e663a9cbb683367f2301527d213f08f76f5ba2077ca27385afd2c206585"
+                    
                         onChange={(e) => {
                           setCreateNewProfile(e.target.value === "0x0");
                         }}
                       >
                         {profiles.map((profile, index) => (
                           <option
-                            key={profile.profileId}
-                            value={profile.profileId}
+                            key="0x3bdb3e663a9cbb683367f2301527d213f08f76f5ba2077ca27385afd2c206585"
+                            value="0x3bdb3e663a9cbb683367f2301527d213f08f76f5ba2077ca27385afd2c206585"
                             selected={index === 0}
                           >
                             {`${profile.name} ${
