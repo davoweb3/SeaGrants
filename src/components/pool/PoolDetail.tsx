@@ -95,7 +95,7 @@ export const PoolDetail = (props: {
     },
     {
       description: "Profile Required",
-      name: props.pool.useRegistryAnchor ? "Yes" : "No",
+      name: props.pool.useRegistryAnchor ? "Si" : "No",
     },
   ];
 
