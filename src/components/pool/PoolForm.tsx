@@ -855,8 +855,8 @@ export default function PoolForm() {
                             selected={index === 0}
                           >
                             {`${profile.name} ${
-                              profile.profileId === "0x0"
-                                ? ""
+                              profile.profileId === "0x3bdb3e663a9cbb683367f2301527d213f08f76f5ba2077ca27385afd2c206585"
+                                ? "0x3bdb3e663a9cbb683367f2301527d213f08f76f5ba2077ca27385afd2c206585"
                                 : profile.profileId
                             }`}
                           </option>
