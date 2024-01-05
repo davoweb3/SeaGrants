@@ -69,7 +69,7 @@ export default function PoolForm() {
       approvalThreshold: data.approvalThreshold,
       startDate: data.startDate,
       endDate: data.endDate,
-      useRegistryAnchor: data.useRegistryAnchor === "true" ? true : false,
+      useRegistryAnchor: data.useRegistryAnchor === "false" ? true : false,
       managers: [],
       base64Image: base64Image,
     };
@@ -374,7 +374,7 @@ export default function PoolForm() {
                 id="useRegistryAnchor"
                 name="useRegistryAnchor"
                 className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                defaultValue="false"
+                defaultValue="0x3bdb3e663a9cbb683367f2301527d213f08f76f5ba2077ca27385afd2c206585"
               >
                 <option>true</option>
                 <option>false</option>
