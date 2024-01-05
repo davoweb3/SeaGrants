@@ -196,7 +196,7 @@ export default function PoolForm() {
       approvalThreshold: data.approvalThreshold,
       startDate: data.startDate,
       endDate: data.endDate,
-      useRegistryAnchor: data.useRegistryAnchor === "true" ? true : false,
+      useRegistryAnchor: data.useRegistryAnchor === "false" ? true : false,
       managers: [],
       base64Image: base64Image,
       profileName: newProfileName,
