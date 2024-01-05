@@ -11,6 +11,7 @@ import {
   optimism,
   polygon,
   sepolia,
+  goerli,
 } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { infuraProvider } from "wagmi/providers/infura";
@@ -24,7 +25,7 @@ dotenv.config();
 const stagingChains = [sepolia, arbitrumSepolia];
 
 // Supported production networks
-const productionChains = [arbitrum, base, celo, mainnet, polygon, optimism];
+const productionChains = [goerli];
 const availableChains =
   process.env.NEXT_PUBLIC_ENVIRONMENT === "dev"
     ? stagingChains
